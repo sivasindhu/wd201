@@ -6,6 +6,7 @@ const todoList = () => {
   const markAsComplete = (index) => {
     all[index].completed = true
   }
+  
 
   const overdue = () => {
     // Write the date check condition here and return the array
@@ -26,6 +27,8 @@ const todoList = () => {
     return all.filter((item) => item.dueDate === today);
   };
 
+  
+
   const dueLater = () => {
     // Write the date check condition here and return the array
     // of todo items that are due later accordingly.
@@ -37,6 +40,7 @@ const todoList = () => {
     }
     return dueLaters;
   };
+  
 
   const toDisplayableList = (list) => {
     // Format the To-Do list here, and return the output string
